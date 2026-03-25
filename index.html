@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Samuel Montaspro — PR & Event Promoter. Guest list, tavoli VIP e serate esclusive a Milano e dintorni." />
+  <title>Samuel Montaspro — PR & Event Promoter</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700&family=Syne:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ── NAVIGATION ─────────────────────────────────────────── -->
+  <nav class="nav" id="nav">
+    <a href="#home" class="nav__logo">
+      <span class="nav__logo-sm">S</span><span class="nav__logo-full">amuel</span>
+    </a>
+    <div class="nav__links" aria-label="Menu principale">
+      <a href="#eventi" class="nav__link">EVENTI</a>
+      <a href="#about" class="nav__link">CHI SONO</a>
+      <a href="#locali" class="nav__link">LOCALI</a>
+      <a href="#contatti" class="nav__link">CONTATTI</a>
+    </div>
+    <button class="burger" id="burger" aria-label="Apri menu" aria-expanded="false" aria-controls="menuOverlay">
+      <div class="burger__box">
+        <span class="burger__line"></span>
+        <span class="burger__line"></span>
+        <span class="burger__line"></span>
+      </div>
+    </button>
+  </nav>
+
+  <!-- ── FULL-SCREEN MENU OVERLAY ───────────────────────────── -->
+  <div class="menu-overlay" id="menuOverlay" role="dialog" aria-modal="true" aria-label="Menu navigazione">
+    <div class="menu-overlay__bg"></div>
+    <div class="menu-overlay__inner">
+      <nav class="menu-overlay__nav" aria-label="Navigazione mobile">
+        <a href="#eventi"   class="menu-link" data-menu-link><span>01</span>EVENTI</a>
+        <a href="#about"    class="menu-link" data-menu-link><span>02</span>CHI SONO</a>
+        <a href="#locali"   class="menu-link" data-menu-link><span>03</span>LOCALI</a>
+        <a href="#contatti" class="menu-link" data-menu-link><span>04</span>CONTATTI</a>
+      </nav>
+      <div class="menu-overlay__footer">
+        <a href="tel:+393331234567" class="menu-contact">+39 333 123 4567</a>
+        <a href="https://wa.me/393331234567?text=Ciao%20Samuel!%20Vorrei%20informazioni%20sulle%20prossime%20serate." target="_blank" rel="noopener noreferrer" class="menu-contact menu-contact--wa">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.123.555 4.116 1.528 5.845L.057 24l6.304-1.654A11.954 11.954 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.887 0-3.66-.488-5.2-1.344l-.373-.221-3.865 1.014 1.033-3.764-.243-.387A9.955 9.955 0 012 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/></svg>
+          WhatsApp
+        </a>
+        <div class="menu-socials">
+          <a href="#" aria-label="Instagram">IG</a>
+          <a href="#" aria-label="TikTok">TK</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ── HERO ───────────────────────────────────────────────── -->
+  <section class="hero" id="home">
+    <div class="hero__bg">
+      <div class="hero__glow"></div>
+      <div class="hero__glow hero__glow--2"></div>
+      <img src="https://images.unsplash.com/photo-1514525253161-7a46d19cd819?w=1400&q=75&auto=format&fit=crop" alt="" class="hero__img" aria-hidden="true" loading="eager">
+    </div>
+    <div class="hero__content" id="heroContent">
+      <div class="hero__eyebrow">PR &amp; EVENT PROMOTER · MILANO</div>
+      <h1 class="hero__title">
+        <span class="hero__word">LA</span>
+        <span class="hero__word">TUA</span>
+        <span class="hero__word">NOTTE</span>
+        <br>
+        <span class="hero__word hero__word--italic">INIZIA</span>
+        <span class="hero__word">QUI</span>
+      </h1>
+      <div class="hero__cta">
+        <a href="#eventi" class="btn btn--outline">
+          <span>SCOPRI GLI EVENTI</span>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+        <a href="https://wa.me/393331234567?text=Ciao%20Samuel!%20Vorrei%20informazioni%20sulle%20prossime%20serate." target="_blank" rel="noopener noreferrer" class="btn btn--ghost">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.123.555 4.116 1.528 5.845L.057 24l6.304-1.654A11.954 11.954 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.887 0-3.66-.488-5.2-1.344l-.373-.221-3.865 1.014 1.033-3.764-.243-.387A9.955 9.955 0 012 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/></svg>
+          <span>SCRIVIMI</span>
+        </a>
+      </div>
+    </div>
+    <a href="#eventi" class="hero__scroll" aria-label="Scorri verso gli eventi">
+      <div class="hero__scroll-bar"></div>
+      <span>scroll</span>
+    </a>
+  </section>
+
+  <!-- ── MARQUEE ─────────────────────────────────────────────── -->
+  <div class="marquee" aria-hidden="true">
+    <div class="marquee__track">
+      <span>GUEST LIST</span><span class="dot">&bull;</span>
+      <span>VIP TABLE</span><span class="dot">&bull;</span>
+      <span>BOTTLE SERVICE</span><span class="dot">&bull;</span>
+      <span>APERITIVO</span><span class="dot">&bull;</span>
+      <span>AFTER HOUR</span><span class="dot">&bull;</span>
+      <span>PRIVATE EVENTS</span><span class="dot">&bull;</span>
+      <span>GUEST LIST</span><span class="dot">&bull;</span>
+      <span>VIP TABLE</span><span class="dot">&bull;</span>
+      <span>BOTTLE SERVICE</span><span class="dot">&bull;</span>
+      <span>APERITIVO</span><span class="dot">&bull;</span>
+      <span>AFTER HOUR</span><span class="dot">&bull;</span>
+      <span>PRIVATE EVENTS</span><span class="dot">&bull;</span>
+    </div>
+  </div>
+
+  <!-- ── ABOUT ──────────────────────────────────────────────── -->
+  <section class="about" id="about">
+    <div class="container">
+      <div class="about__grid">
+        <div class="about__visual">
+          <div class="about__img-wrap">
+            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=700&q=80&auto=format&fit=crop&crop=face" alt="Samuel Montaspro" class="about__img">
+            <div class="about__img-overlay"></div>
+          </div>
+          <div class="about__badge">
+            <span class="about__badge-num" data-count="200">0</span>
+            <span class="about__badge-label">Serate<br>organizzate</span>
+          </div>
+        </div>
+        <div class="about__content">
+          <span class="label">Chi sono</span>
+          <h2 class="section-title">Samuel<br><em>Montaspro</em></h2>
+          <p class="about__text">Sono un PR e promoter con anni di esperienza nel cuore della nightlife milanese. Porto le persone giuste nei posti giusti — guest list esclusive, tavoli VIP e accesso privilegiato alle migliori serate della città.</p>
+          <p class="about__text">Collaboro con i locali più selezionati tra Milano e provincia, curando ogni dettaglio perché la tua serata sia indimenticabile.</p>
+          <div class="about__stats">
+            <div class="stat">
+              <span class="stat__num" data-count="200">0</span><span class="stat__plus">+</span>
+              <span class="stat__label">Serate</span>
+            </div>
+            <div class="stat">
+              <span class="stat__num" data-count="15">0</span><span class="stat__plus">+</span>
+              <span class="stat__label">Locali</span>
+            </div>
+            <div class="stat">
+              <span class="stat__num" data-count="5">0</span><span class="stat__plus">K+</span>
+              <span class="stat__label">Clienti</span>
+            </div>
+          </div>
+          <a href="#contatti" class="btn btn--solid">CONTATTAMI</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── EVENTS ─────────────────────────────────────────────── -->
+  <section class="events" id="eventi">
+    <div class="container">
+      <div class="section-header">
+        <div>
+          <span class="label">Prossimi appuntamenti</span>
+          <h2 class="section-title">Gli <em>eventi</em></h2>
+        </div>
+        <a href="#contatti" class="btn btn--outline-sm">GUEST LIST</a>
+      </div>
+
+      <!-- Loading skeleton -->
+      <div class="events__skeleton" id="eventsSkeleton" aria-live="polite" aria-label="Caricamento eventi in corso">
+        <div class="skeleton-card"></div>
+        <div class="skeleton-card"></div>
+        <div class="skeleton-card"></div>
+      </div>
+
+      <!-- Events grid (populated via JS) -->
+      <div class="events__grid" id="eventsGrid" aria-label="Prossimi eventi"></div>
+    </div>
+  </section>
+
+  <!-- ── VENUES ─────────────────────────────────────────────── -->
+  <section class="venues" id="locali">
+    <div class="container">
+      <div class="section-header">
+        <div>
+          <span class="label">Dove ci trovi</span>
+          <h2 class="section-title">I <em>locali</em></h2>
+        </div>
+      </div>
+      <ul class="venues__list" aria-label="Locali partner">
+        <li class="venue-item">
+          <span class="venue-item__num">01</span>
+          <span class="venue-item__name">Volt Club</span>
+          <span class="venue-item__tags">
+            <span class="tag">Techno</span>
+            <span class="tag">House</span>
+          </span>
+          <span class="venue-item__city">Milano</span>
+        </li>
+        <li class="venue-item">
+          <span class="venue-item__num">02</span>
+          <span class="venue-item__name">Sanctuary</span>
+          <span class="venue-item__tags">
+            <span class="tag">EDM</span>
+            <span class="tag">Commercial</span>
+          </span>
+          <span class="venue-item__city">Milano</span>
+        </li>
+        <li class="venue-item">
+          <span class="venue-item__num">03</span>
+          <span class="venue-item__name">The Garden</span>
+          <span class="venue-item__tags">
+            <span class="tag">Open Air</span>
+            <span class="tag">Summer</span>
+          </span>
+          <span class="venue-item__city">Milano</span>
+        </li>
+        <li class="venue-item">
+          <span class="venue-item__num">04</span>
+          <span class="venue-item__name">Noir Lounge</span>
+          <span class="venue-item__tags">
+            <span class="tag">R&amp;B</span>
+            <span class="tag">Hip Hop</span>
+          </span>
+          <span class="venue-item__city">Como</span>
+        </li>
+        <li class="venue-item">
+          <span class="venue-item__num">05</span>
+          <span class="venue-item__name">Artefact</span>
+          <span class="venue-item__tags">
+            <span class="tag">Underground</span>
+            <span class="tag">Industrial</span>
+          </span>
+          <span class="venue-item__city">Milano</span>
+        </li>
+        <li class="venue-item">
+          <span class="venue-item__num">06</span>
+          <span class="venue-item__name">Palazzo Reale Club</span>
+          <span class="venue-item__tags">
+            <span class="tag">Luxury</span>
+            <span class="tag">VIP</span>
+          </span>
+          <span class="venue-item__city">Milano</span>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ── CONTACT ────────────────────────────────────────────── -->
+  <section class="contact" id="contatti">
+    <div class="contact__bg-wrap">
+      <img src="https://images.unsplash.com/photo-1429962714451-bb934ecdc4ec?w=1400&q=70&auto=format&fit=crop" alt="" class="contact__bg-img" aria-hidden="true" loading="lazy">
+      <div class="contact__bg-overlay"></div>
+    </div>
+    <div class="container">
+      <div class="contact__inner">
+        <span class="label label--light">Prenota il tuo posto</span>
+        <h2 class="section-title section-title--light">Parliamo<br><em>adesso</em></h2>
+        <p class="contact__sub">Guest list, tavoli VIP, bottiglie o semplicemente una bella serata.<br>Sono sempre disponibile per te.</p>
+        <div class="contact__cards">
+          <a href="tel:+393331234567" class="ccard">
+            <div class="ccard__icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.83 11a19.79 19.79 0 01-3.07-8.67A2 2 0 012.73 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.91 9.91a16 16 0 006.08 6.08l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+            </div>
+            <div class="ccard__text">
+              <span class="ccard__label">Chiamami</span>
+              <span class="ccard__value">+39 333 123 4567</span>
+            </div>
+          </a>
+          <a href="https://wa.me/393331234567?text=Ciao%20Samuel!%20Vorrei%20informazioni%20sulle%20prossime%20serate." target="_blank" rel="noopener noreferrer" class="ccard ccard--wa">
+            <div class="ccard__icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.123.555 4.116 1.528 5.845L.057 24l6.304-1.654A11.954 11.954 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.887 0-3.66-.488-5.2-1.344l-.373-.221-3.865 1.014 1.033-3.764-.243-.387A9.955 9.955 0 012 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/></svg>
+            </div>
+            <div class="ccard__text">
+              <span class="ccard__label">WhatsApp</span>
+              <span class="ccard__value">Scrivimi su WhatsApp</span>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── FOOTER ─────────────────────────────────────────────── -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__inner">
+        <div class="footer__brand">
+          <span class="footer__logo">SM</span>
+          <p class="footer__tagline">La tua notte, la mia cura.</p>
+        </div>
+        <nav class="footer__nav" aria-label="Footer navigation">
+          <a href="#eventi">EVENTI</a>
+          <a href="#about">CHI SONO</a>
+          <a href="#locali">LOCALI</a>
+          <a href="#contatti">CONTATTI</a>
+        </nav>
+        <div class="footer__socials">
+          <a href="#" aria-label="Instagram di Samuel Montaspro">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+          </a>
+          <a href="#" aria-label="TikTok di Samuel Montaspro">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-2.88 2.5 2.89 2.89 0 01-2.89-2.89 2.89 2.89 0 012.89-2.89c.28 0 .54.04.79.1V9.01a6.33 6.33 0 00-.79-.05 6.34 6.34 0 00-6.34 6.34 6.34 6.34 0 006.34 6.34 6.34 6.34 0 006.33-6.34V8.93a8.16 8.16 0 004.77 1.52V7.02a4.85 4.85 0 01-1-.33z"/></svg>
+          </a>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p>&copy; 2026 Samuel Montaspro. Tutti i diritti riservati.</p>
+        <a href="tel:+393331234567">+39 333 123 4567</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>
