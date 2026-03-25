@@ -257,7 +257,7 @@ function setupScrollAnimations() {
 
 /* ── STAT COUNTERS ───────────────────────────────────────────── */
 function setupCounters() {
-  document.querySelectorAll(".stat__num[data-count]").forEach(el => {
+  document.querySelectorAll("[data-count]").forEach(el => {
     const target = parseFloat(el.dataset.count);
     ScrollTrigger.create({
       trigger: el,
